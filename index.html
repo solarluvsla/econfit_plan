@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이콘핏 기획서</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══ 1. HERO ══ -->
+<section class="hero" id="hero">
+  <div class="hero-meta">
+    <div><span><strong>Type</strong></span>Personal Project</div>
+    <div><span><strong>Role</strong></span>기획 · 디자인 · 리서치</div>
+    <div><span><strong>Period</strong></span>2024.XX – 2024.XX</div>
+    <div><span><strong>Tool</strong></span>Figma · FigJam · Notion</div>
+  </div>
+
+  <div class="hero-center">
+    <div class="tagline">경제를 배우는 가장 쉬운 방법</div>
+    <h1>이콘<span>핏</span></h1>
+    <p class="hero-sub">EconFit — 경제 학습 · 금융 이해 · 실전 적용</p>
+
+    <div class="hero-phone-row">
+      <div class="phone-mock">
+        <div class="phone-screen-inner">
+          <div class="ps-topbar"></div>
+          <div class="ps-row"></div>
+          <div class="ps-card"></div>
+          <div class="ps-row"></div>
+          <div class="ps-row" style="width:60%"></div>
+          <div class="ps-card"></div>
+        </div>
+        <div style="font-size:10px;">홈</div>
+      </div>
+      <div class="phone-mock active">
+        <div class="phone-screen-inner">
+          <div class="ps-topbar"></div>
+          <div class="ps-card hl"></div>
+          <div class="ps-row"></div>
+          <div class="ps-card"></div>
+          <div class="ps-row"></div>
+          <div class="ps-card hl"></div>
+        </div>
+        <div style="font-size:10px; color:rgba(255,213,79,.8);">학습</div>
+      </div>
+      <div class="phone-mock">
+        <div class="phone-screen-inner">
+          <div class="ps-topbar"></div>
+          <div class="ps-row"></div>
+          <div class="ps-card"></div>
+          <div class="ps-card"></div>
+          <div class="ps-row" style="width:70%"></div>
+        </div>
+        <div style="font-size:10px;">금융</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      경제 학습 · 금융 앱 · UX/UI 기획서
+    </div>
+    <div style="color:rgba(255,255,255,.3); font-size:12px;">Scroll ↓</div>
+  </div>
+</section>
+
+<!-- ══ 2. OVERVIEW ══ -->
+<section class="overview" id="overview">
+  <div>
+    <div class="label">OVERVIEW</div>
+    <h2>경제, 알고 싶지만<br/>어디서 시작해야 할지<br/>모르겠어요</h2>
+    <p class="sub-desc">
+      복잡한 경제 뉴스와 금융 정보가 쏟아지지만, 기초 없이는 이해하기 어렵고
+      공부하려 해도 어디서부터 시작해야 할지 막막한 사람들이 많아요.
+      이콘핏은 일상 속 경제 개념을 쉽게 학습하고, 실제 금융과 연결해
+      나만의 경제 지식을 쌓을 수 있는 앱이에요.
+    </p>
+  </div>
+  <div>
+    <div class="overview-icon">📊</div>
+    <div class="but-box">
+      <div class="but-label">BUT..</div>
+      <h3>경제는 어렵고, 금융 앱은 너무 복잡해요.<br/>학습과 실전을 동시에 잡는 서비스가 필요해요.</h3>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 3. DESK RESEARCH ══ -->
+<section class="research" id="research">
+  <div class="label">DESK RESEARCH</div>
+  <h2>경제·금융 앱 시장,<br/>사용자들은 어떤 어려움이 있을까요?</h2>
+  <p class="sub-desc">데스크 리서치를 통해 경제·금융 앱 이용자들의 니즈와 페인포인트를 파악했어요.</p>
+
+  <div class="research-grid">
+    <div class="research-card">
+      <div class="q-label">Q1. 경제 공부를 시작하기 어려운 이유</div>
+      <div class="q-text">생소한 용어와 개념으로 진입 장벽이 <strong>높다</strong>고 느낀다</div>
+      <div class="donut-row">
+        <div>
+          <div class="donut-label">72%</div>
+          <div class="donut-sub">그렇다 (전체 : 1,000명)</div>
+        </div>
+        <div style="font-size:12px; color:var(--gray500); line-height:1.8;">
+          · 기초 용어부터 설명해주는 콘텐츠 부재<br/>
+          · 파편화된 정보로 흐름 파악 어려움
+        </div>
+      </div>
+      <div class="research-insight">경제 기초 개념 학습 기능의 필요성</div>
+    </div>
+
+    <div class="research-card">
+      <div class="q-label">Q2. 금융 앱 사용 시 불편한 점</div>
+      <div class="q-text">복잡한 UI와 전문 용어로 <strong>이해하기 어렵다</strong></div>
+      <div class="donut-row">
+        <div>
+          <div class="donut-label">68%</div>
+          <div class="donut-sub">그렇다 (전체 : 1,000명)</div>
+        </div>
+        <div style="font-size:12px; color:var(--gray500); line-height:1.8;">
+          · 초보자 친화적 UI 부재<br/>
+          · 학습과 실전 연계 기능 없음
+        </div>
+      </div>
+      <div class="research-insight">쉬운 금융 정보 연계 기능의 필요성</div>
+    </div>
+
+    <div class="research-card">
+      <div class="q-label">Q3-1. 경제·금융 앱 사용 이미지</div>
+      <div class="q-text">출처 : 트렌드모니터</div>
+      <div class="bar-list">
+        <div class="bar-item">
+          <span class="bar-name">어려운</span>
+          <div class="bar-track"><div class="bar-fill navy" style="width:31.2%"></div></div>
+          <span class="bar-pct">31.2%</span>
+        </div>
+        <div class="bar-item">
+          <span class="bar-name">복잡한</span>
+          <div class="bar-track"><div class="bar-fill gray" style="width:28.5%"></div></div>
+          <span class="bar-pct">28.5%</span>
+        </div>
+        <div class="bar-item">
+          <span class="bar-name">필요한</span>
+          <div class="bar-track"><div class="bar-fill teal" style="width:24.1%"></div></div>
+          <span class="bar-pct">24.1%</span>
+        </div>
+        <div class="bar-item">
+          <span class="bar-name">기타</span>
+          <div class="bar-track"><div class="bar-fill gray" style="width:16.2%"></div></div>
+          <span class="bar-pct">16.2%</span>
+        </div>
+      </div>
+      <div class="research-insight">어렵고 복잡한 이미지 탈피의 필요성</div>
+    </div>
+
+    <div class="research-card">
+      <div class="q-label">Q3-2. 경제 학습 콘텐츠 지속 이용 어려운 이유</div>
+      <div class="q-text">학습 동기부여 부족으로 <strong>꾸준히 공부하기 힘들다</strong></div>
+      <div class="donut-row">
+        <div>
+          <div class="donut-label">59%</div>
+          <div class="donut-sub">그렇다 (전체 : 1,000명)</div>
+        </div>
+        <div style="font-size:12px; color:var(--gray500); line-height:1.8;">
+          · 게임화된 학습 동기 시스템 필요<br/>
+          · 성취감을 주는 리워드 시스템 부재
+        </div>
+      </div>
+      <div class="research-insight">지속적 학습 동기부여 시스템의 필요성</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 4. PROJECT GOAL ══ -->
+<section class="goal" id="goal">
+  <div class="label">PROJECT GOAL</div>
+  <h2>이콘핏의 최종 목표를 설정했어요</h2>
+  <p class="sub-desc">데스크 리서치를 통해 구체적인 페인포인트와 니즈를 파악해 알맞은 솔루션을 수립하고 이콘핏이 추구하고자 하는 최종 목표를 설정했어요.</p>
+
+  <div class="goal-cards">
+    <div class="goal-card">
+      <div class="sol-badge">Solution 1</div>
+      <div class="sol-icon">📚</div>
+      <h3>단계별 경제 학습</h3>
+      <p>경제 기초부터 심화까지 체계적인 커리큘럼으로 누구나 쉽게 경제를 배울 수 있어요.</p>
+    </div>
+    <div class="goal-card">
+      <div class="sol-badge">Solution 2</div>
+      <div class="sol-icon">💰</div>
+      <h3>금융 실전 연계</h3>
+      <p>배운 경제 개념을 실제 금융 정보와 연결해 이론과 실전을 동시에 익힐 수 있어요.</p>
+    </div>
+    <div class="goal-card">
+      <div class="sol-badge">Solution 3</div>
+      <div class="sol-icon">🎯</div>
+      <h3>게이미피케이션 학습</h3>
+      <p>퀴즈, 리워드, 학습 달성률 등 게임 요소로 경제 공부를 재미있게 이어갈 수 있어요.</p>
+    </div>
+  </div>
+
+  <div style="width:60%; height:1px; background:var(--gray100); margin:32px auto;"></div>
+
+  <div class="goal-final">
+    <div class="gf-label">Goal</div>
+    <h3>경제 개념을 쉽게 배우고 금융과 연결해<br/>실생활에 적용할 수 있는 경제·금융 학습 플랫폼</h3>
+  </div>
+</section>
+
+<!-- ══ 5. COMPETITIVE ANALYSIS ══ -->
+<section class="competitive" id="competitive">
+  <div class="label">COMPETITIVE ANALYSIS &amp; POSITIONING MAP</div>
+  <h2>경쟁 서비스를 파악하고<br/>포지셔닝 맵으로 서비스 목표를 설정했어요</h2>
+  <p class="sub-desc">경제·금융 앱 시장 내 경쟁 브랜드를 비교 분석해 이콘핏의 핵심 기능을 설정하고 목표 지점을 포지셔닝했어요.</p>
+
+  <div class="comp-grid">
+    <div class="comp-table-box">
+      <h4>Competitive Analysis 1</h4>
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>기능</th>
+            <th>삼성증권</th>
+            <th>토스</th>
+            <th>EBSi</th>
+            <th>듀오링고</th>
+            <th class="me">이콘핏</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="feature">단계별 커리큘럼</td><td class="x">✕</td><td class="x">✕</td><td class="o">○</td><td class="o">○</td><td class="o me">○</td></tr>
+          <tr><td class="feature">퀴즈 콘텐츠</td><td class="x">✕</td><td class="x">✕</td><td class="o">○</td><td class="o">○</td><td class="o me">○</td></tr>
+          <tr><td class="feature">금융 정보 연계</td><td class="o">○</td><td class="o">○</td><td class="x">✕</td><td class="x">✕</td><td class="o me">○</td></tr>
+          <tr><td class="feature">학습 리워드</td><td class="x">✕</td><td class="o">○</td><td class="x">✕</td><td class="o">○</td><td class="o me">○</td></tr>
+          <tr><td class="feature">개념 사전</td><td class="o">○</td><td class="x">✕</td><td class="o">○</td><td class="x">✕</td><td class="o me">○</td></tr>
+          <tr><td class="feature">커뮤니티</td><td class="x">✕</td><td class="x">✕</td><td class="o">○</td><td class="x">✕</td><td class="o me">○</td></tr>
+          <tr><td class="feature">게이미피케이션</td><td class="x">✕</td><td class="x">✕</td><td class="x">✕</td><td class="o">○</td><td class="o me">○</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pos-map-box">
+      <h4>Positioning Map</h4>
+      <div class="pos-canvas">
+        <div class="pos-axis-x"></div>
+        <div class="pos-axis-y"></div>
+        <div class="pos-label pos-top">학습 중심</div>
+        <div class="pos-label pos-bottom">금융 중심</div>
+        <div class="pos-label pos-left">어려운</div>
+        <div class="pos-label pos-right">쉬운</div>
+        <div class="pos-dot" style="background:#666; top:25%; left:30%;">EBSi</div>
+        <div class="pos-dot" style="background:#888; top:30%; left:55%;">듀오링고</div>
+        <div class="pos-dot" style="background:#444; top:65%; left:25%;">삼성증권</div>
+        <div class="pos-dot" style="background:#555; top:70%; left:55%;">토스</div>
+        <div class="pos-dot pos-me" style="top:22%; left:72%;">이콘핏</div>
+      </div>
+    </div>
+
+    <div class="comp-features">
+      <h4 style="margin-bottom:20px;">Competitive Analysis 2 — 이콘핏만의 차별화 포인트</h4>
+      <div class="comp-feat-row">
+        <div class="feat-icon-wrap">📚</div>
+        <div class="feat-body">
+          <h4>단계별 경제 커리큘럼</h4>
+          <p>경제 카테고리를 거시/미시/금융/투자/생활경제 등으로 세분화. 온보딩 시 수준 진단 후 맞춤형 커리큘럼을 제공해요.</p>
+        </div>
+      </div>
+      <div class="comp-feat-row">
+        <div class="feat-icon-wrap">💹</div>
+        <div class="feat-body">
+          <h4>학습 ↔ 금융 실전 연계</h4>
+          <p>배운 경제 개념과 관련된 실시간 금융 지표, 뉴스를 연결해 이론이 실전에서 어떻게 작동하는지 바로 확인할 수 있어요.</p>
+        </div>
+      </div>
+      <div class="comp-feat-row">
+        <div class="feat-icon-wrap">🎮</div>
+        <div class="feat-body">
+          <h4>게이미피케이션 + 리워드 시스템</h4>
+          <p>퀴즈 완료, 연속 학습, 마일스톤 달성 시 리워드를 제공해 학습 동기를 지속시켜요. 학습 달성률과 뱃지로 성취감을 시각화했어요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 6. PERSONA ══ -->
+<section class="persona" id="persona">
+  <div class="label">PERSONA</div>
+  <h2>유저는 현재 이렇게 생각해요</h2>
+  <p class="sub-desc">프로젝트 목표를 기반으로 메인 타겟과 서브 타겟을 설정하고 타겟의 목적에 맞는 청사진을 도출했어요.</p>
+
+  <div class="persona-grid">
+    <div class="persona-card main">
+      <div class="persona-badge">PERSONA 1 : Main Target</div>
+      <div class="persona-info">
+        <div class="info-item"><div class="info-l">이름</div><div class="info-v">김민준</div></div>
+        <div class="info-item"><div class="info-l">나이</div><div class="info-v">28세</div></div>
+        <div class="info-item"><div class="info-l">직업</div><div class="info-v">사회초년생</div></div>
+        <div class="info-item"><div class="info-l">관심사</div><div class="info-v">재테크, 절약</div></div>
+      </div>
+      <div class="persona-name">MINJUN</div>
+      <div class="persona-quote">
+        "취업하고 돈 모으기 시작했는데, 주식이나 금리 같은 말이 뉴스에 나와도 무슨 뜻인지 하나도 모르겠어!"
+      </div>
+      <div class="pain-goal-row">
+        <div class="pain-box">
+          <div class="pg-title">Painpoint</div>
+          <ul><li>경제 용어가 너무 어려워요</li><li>어디서 배워야 할지 모르겠어요</li><li>공부해도 금방 잊어버려요</li><li>실제 금융과 연결이 안 돼요</li></ul>
+        </div>
+        <div class="goal-box">
+          <div class="pg-title">Goal</div>
+          <ul><li>기초부터 체계적으로 배우고 싶어요</li><li>배운 내용을 재테크에 활용하고 싶어요</li><li>꾸준히 학습 습관을 만들고 싶어요</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="persona-card sub">
+      <div class="persona-badge">PERSONA 2 : Sub Target</div>
+      <div class="persona-info">
+        <div class="info-item"><div class="info-l">이름</div><div class="info-v">박서연</div></div>
+        <div class="info-item"><div class="info-l">나이</div><div class="info-v">22세</div></div>
+        <div class="info-item"><div class="info-l">직업</div><div class="info-v">대학생</div></div>
+        <div class="info-item"><div class="info-l">관심사</div><div class="info-v">경제, 금융, 투자</div></div>
+      </div>
+      <div class="persona-name sub-name">SEOYEON</div>
+      <div class="persona-quote">
+        "경제 수업은 듣는데 실생활이랑 연결이 안 되고, 친구들이 주식 얘기 하면 대화에 끼지 못해서 속상해!"
+      </div>
+      <div class="pain-goal-row">
+        <div class="pain-box">
+          <div class="pg-title">Painpoint</div>
+          <ul><li>이론은 알지만 실전 적용이 어려워요</li><li>혼자 공부하면 동기가 부족해요</li><li>경제 뉴스 맥락 이해가 어려워요</li></ul>
+        </div>
+        <div class="goal-box">
+          <div class="pg-title">Goal</div>
+          <ul><li>경제 이론과 실제를 연결하고 싶어요</li><li>다른 사람들과 경제 토론을 하고 싶어요</li><li>재미있게 꾸준히 공부하고 싶어요</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 7. SERVICE BLUEPRINT ══ -->
+<section class="blueprint" id="blueprint">
+  <div class="label">SERVICE BLUE PRINT</div>
+  <h2>서비스 블루프린트</h2>
+  <p class="sub-desc">유저의 주요 사용 시나리오를 기반으로 서비스 블루프린트를 작성했어요.</p>
+
+  <div class="bp-scroll">
+    <table class="bp-table">
+      <thead>
+        <tr>
+          <th class="bp-th-row">구분</th>
+          <th>앱 시작</th>
+          <th>학습하기</th>
+          <th>퀴즈 풀기</th>
+          <th>금융 연계</th>
+          <th>리워드</th>
+          <th>복습·마이</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-header">물리적 증거</td>
+          <td>스마트폰</td><td>스마트폰</td><td>스마트폰</td><td>스마트폰</td><td>스마트폰</td><td>스마트폰</td>
+        </tr>
+        <tr>
+          <td class="row-header">사용자 행동</td>
+          <td class="td-user">앱 실행 · 온보딩 · 관심 분야 설정</td>
+          <td class="td-user">오늘의 학습 확인 · 개념 학습</td>
+          <td class="td-user">학습 후 퀴즈 풀기 · 결과 확인</td>
+          <td class="td-user">금융 지표 확인 · 뉴스 연계 읽기</td>
+          <td class="td-user">뱃지·포인트 획득 · 리워드 확인</td>
+          <td class="td-user">오답 복습 · 달성률 확인</td>
+        </tr>
+        <tr>
+          <td class="row-header">제공 서비스</td>
+          <td class="td-front"><span class="bp-chip">수준 진단</span><span class="bp-chip yellow">맞춤 커리큘럼</span></td>
+          <td class="td-front"><span class="bp-chip">단계별 콘텐츠</span><span class="bp-chip">개념 사전</span></td>
+          <td class="td-front"><span class="bp-chip yellow">OX 퀴즈</span><span class="bp-chip">빈칸 퀴즈</span></td>
+          <td class="td-front"><span class="bp-chip">실시간 지표</span><span class="bp-chip teal">뉴스 연계</span></td>
+          <td class="td-front"><span class="bp-chip yellow">포인트</span><span class="bp-chip">뱃지 획득</span></td>
+          <td class="td-front"><span class="bp-chip">오답노트</span><span class="bp-chip">달성 캘린더</span></td>
+        </tr>
+        <tr>
+          <td class="row-header">비대면 서비스</td>
+          <td class="td-back">AI 커리큘럼 추천 알고리즘</td>
+          <td class="td-back">학습 진도 저장 · 콘텐츠 DB</td>
+          <td class="td-back">퀴즈 채점 · 오답 수집 · 난이도 조정</td>
+          <td class="td-back">금융 API 연동 · 뉴스 큐레이션</td>
+          <td class="td-back">포인트 적립 · 뱃지 발급 시스템</td>
+          <td class="td-back">오답 알림 · 학습 통계 생성</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══ 8. FLOW CHART ══ -->
+<section class="flowchart" id="flowchart">
+  <div class="label">FLOW CHART</div>
+  <h2>플로우 차트</h2>
+  <p class="sub-desc">퍼소나 민준·서연의 이용 목표를 정의하고 청사진에 알맞게 플로우 차트를 제작했어요.</p>
+
+  <div class="flow-canvas">
+    <div class="flow-tree">
+      <!-- Root -->
+      <div class="flow-node start">이콘핏 실행</div>
+      <div class="flow-vline"></div>
+      <div class="flow-node decision">회원 여부</div>
+      <div class="flow-split">
+        <div class="flow-branch">
+          <div class="flow-vline"></div>
+          <div class="flow-node">로그인</div>
+        </div>
+        <div class="flow-branch">
+          <div class="flow-vline"></div>
+          <div class="flow-node">회원가입</div>
+          <div class="flow-vline"></div>
+          <div class="flow-node">수준 진단</div>
+          <div class="flow-vline"></div>
+          <div class="flow-node">관심분야 설정</div>
+        </div>
+      </div>
+      <div class="flow-vline" style="height:32px;"></div>
+      <!-- Main sections -->
+      <div class="flow-sections">
+        <div class="flow-section">
+          <div class="flow-section-label">홈</div>
+          <div class="flow-leaves">
+            <div class="flow-node leaf">오늘의 학습</div>
+            <div class="flow-node leaf">추천 콘텐츠</div>
+            <div class="flow-node leaf">학습 달성률</div>
+          </div>
+        </div>
+        <div class="flow-section">
+          <div class="flow-section-label">학습</div>
+          <div class="flow-leaves">
+            <div class="flow-node leaf">커리큘럼</div>
+            <div class="flow-node leaf">단계별 학습</div>
+            <div class="flow-node leaf">개념 사전</div>
+            <div class="flow-node leaf">퀴즈</div>
+          </div>
+        </div>
+        <div class="flow-section">
+          <div class="flow-section-label">금융</div>
+          <div class="flow-leaves">
+            <div class="flow-node leaf">금융 지표</div>
+            <div class="flow-node leaf">뉴스 연계</div>
+            <div class="flow-node leaf">관련 개념</div>
+          </div>
+        </div>
+        <div class="flow-section">
+          <div class="flow-section-label">커뮤니티</div>
+          <div class="flow-leaves">
+            <div class="flow-node leaf">토론</div>
+            <div class="flow-node leaf">Q&amp;A</div>
+            <div class="flow-node leaf">스터디</div>
+          </div>
+        </div>
+        <div class="flow-section">
+          <div class="flow-section-label">마이</div>
+          <div class="flow-leaves">
+            <div class="flow-node leaf">학습 기록</div>
+            <div class="flow-node leaf">리워드</div>
+            <div class="flow-node leaf">오답노트</div>
+            <div class="flow-node leaf">설정</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 9. VISUAL CONCEPT ══ -->
+<section class="visual" id="visual">
+  <div class="label">VISUAL CONCEPT</div>
+  <h2>"경제를 핏(FIT)하게"<br/>경제학습 금융 앱 이콘핏이에요</h2>
+  <p class="visual-sub">경제(Economy)와 딱 맞게(Fit)를 결합해 누구에게나 꼭 맞는 경제 학습을 제공한다는 의미로 이름을 만들었어요.<br/>신뢰감 있는 네이비와 활기찬 옐로우로 금융의 진지함과 학습의 즐거움을 동시에 표현했어요.</p>
+  <div class="logo-showcase">
+    <div class="logo-box">
+      <div class="logo-text">이콘<span>핏</span></div>
+    </div>
+    <div class="logo-box logo-box-alt">
+      <div class="logo-icon-box">📊</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 10. COLOR SYSTEM ══ -->
+<section class="color-system" id="color">
+  <div class="label">COLOR SYSTEM</div>
+  <h2>컬러 시스템</h2>
+  <p class="sub-desc">금융 모드와 학습 모드 두 가지 테마로 신뢰감과 친근함을 동시에 전달해요.</p>
+
+  <div class="color-dual">
+    <div>
+      <div class="color-mode-title">금융</div>
+      <div class="color-swatch-stack">
+        <div class="swatch-row"><div class="swatch s60" style="background:#1B2559;"></div><div class="swatch-info"><div class="swatch-pct">60%</div><div class="swatch-role">구조 · 헤더 · 주요 UI</div><div class="swatch-hex">#1B2559</div></div></div>
+        <div class="swatch-row"><div class="swatch s30" style="background:#FDFCF8; border:1.5px solid #EBEBEB;"></div><div class="swatch-info"><div class="swatch-pct">30%</div><div class="swatch-role">배경</div><div class="swatch-hex">#FDFCF8</div></div></div>
+        <div class="swatch-row"><div class="swatch s10" style="background:#FFD54F;"></div><div class="swatch-info"><div class="swatch-pct">10%</div><div class="swatch-role">CTA 버튼 · 리워드 · 선택 상태 (퀴즈)</div><div class="swatch-hex">#FFD54F</div></div></div>
+        <div class="swatch-row"><div class="swatch s10" style="background:#B2DFDB;"></div><div class="swatch-info"><div class="swatch-pct">10%</div><div class="swatch-role">학습 완료 상태 · 정보 카드 배경 · 서브 강조(쩜보 보조)</div><div class="swatch-hex">#B2DFDB</div></div></div>
+      </div>
+      <div class="swatch-extra"><span style="background:#22c55e; color:white;">▼ 하락</span><span style="background:#ef4444; color:white;">▲ 상승</span></div>
+    </div>
+
+    <div>
+      <div class="color-mode-title">학습</div>
+      <div class="color-swatch-stack">
+        <div class="swatch-row"><div class="swatch s60" style="background:#FDFCF8; border:1.5px solid #EBEBEB;"></div><div class="swatch-info"><div class="swatch-pct">60%</div><div class="swatch-role">배경 (학습 집중 환경)</div><div class="swatch-hex">#FDFCF8</div></div></div>
+        <div class="swatch-row"><div class="swatch s30" style="background:#1B2559;"></div><div class="swatch-info"><div class="swatch-pct">30%</div><div class="swatch-role">주요 텍스트 · 아이콘</div><div class="swatch-hex">#1B2559</div></div></div>
+        <div class="swatch-row"><div class="swatch s10" style="background:#FFD54F;"></div><div class="swatch-info"><div class="swatch-pct">10%</div><div class="swatch-role">CTA · 퀴즈 정답 강조</div><div class="swatch-hex">#FFD54F</div></div></div>
+        <div class="swatch-row"><div class="swatch s10" style="background:#B2DFDB;"></div><div class="swatch-info"><div class="swatch-pct">10%</div><div class="swatch-role">진도 완료 · 서브 강조</div><div class="swatch-hex">#B2DFDB</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 11. TYPOGRAPHY ══ -->
+<section class="typo" id="typo">
+  <div class="label">TYPOGRAPHY</div>
+  <h2>타이포그래피</h2>
+  <p class="sub-desc">가독성, 신뢰감, 포인트 표현을 위해 세 가지 폰트를 목적에 맞게 사용했어요.</p>
+
+  <div class="typo-grid">
+    <div class="typo-card">
+      <div class="font-cat">한글 폰트</div>
+      <div class="font-name">한글&nbsp;&nbsp;Pretendard Variable</div>
+      <ol class="font-list"><li>가독성</li><li>신뢰감</li><li>UI 안정성 최고</li></ol>
+      <div class="typo-scale">
+        <div class="type-row"><span class="size-label">32px</span><span class="weight-label">Bold</span><span class="type-sample" style="font-size:22px; font-weight:700; color:var(--yellow);">Headline1</span></div>
+        <div class="type-row"><span class="size-label">24px</span><span class="weight-label">Bold</span><span class="type-sample" style="font-size:17px; font-weight:700; color:var(--yellow);">Headline2</span></div>
+        <div class="type-row"><span class="size-label">20px</span><span class="weight-label">Medium</span><span class="type-sample" style="font-size:14px; font-weight:500;">Headline3</span></div>
+        <div class="type-row"><span class="size-label">16px</span><span class="weight-label">Regular</span><span class="type-sample" style="font-size:12px; font-weight:400;">Caption</span></div>
+        <div class="type-row"><span class="size-label">14px</span><span class="weight-label">Regular</span><span class="type-sample" style="font-size:11px; font-weight:400; color:var(--gray500);">Label</span></div>
+      </div>
+    </div>
+
+    <div class="typo-card">
+      <div class="font-cat">숫자 폰트</div>
+      <div class="font-name" style="font-family:'IBM Plex Sans KR',sans-serif;">숫자&nbsp;&nbsp;IBM Plex Sans</div>
+      <ol class="font-list"><li>숫자 가독성</li><li>폭이 일정</li></ol>
+      <div style="margin-top:16px;">
+        <div style="font-size:11px; color:var(--gray300); margin-bottom:6px;">Number · 24px · Bold · Heading1</div>
+        <div style="font-family:'IBM Plex Sans KR',sans-serif; display:flex; flex-direction:column; gap:4px;">
+          <div style="font-size:16px; font-weight:700; color:var(--navy);">1234567890</div>
+          <div style="font-size:14px; font-weight:700; color:var(--navy);">1234567890</div>
+          <div style="font-size:13px; font-weight:400; color:var(--navy);">1234567890</div>
+          <div style="font-size:12px; font-weight:300; color:var(--gray500);">1234567890</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="typo-card">
+      <div class="font-cat">포인트 폰트</div>
+      <div class="font-name" style="font-weight:900; letter-spacing:-1px;">포인트&nbsp;&nbsp;Paperlogy</div>
+      <ol class="font-list"><li>메인 메시지</li><li>보상 정보</li></ol>
+      <div style="margin-top:20px; display:flex; flex-direction:column; gap:10px;">
+        <div style="font-size:32px; font-weight:900; color:var(--navy); letter-spacing:-1px;">이콘핏</div>
+        <div style="font-size:22px; font-weight:800; color:var(--yellow);">EconFit</div>
+        <div style="font-size:16px; font-weight:700; color:var(--teal);">경제를 핏하게</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 12. KEY FEATURES ══ -->
+<section class="features" id="features">
+  <div class="label">KEY FEATURES</div>
+  <h2>이콘핏의 핵심 기능</h2>
+
+  <!-- Feature 1: Onboarding -->
+  <div class="feature-block">
+    <div class="feat-text">
+      <div class="feat-label">ONBOARDING</div>
+      <div class="feat-title">수준 진단을 통해<br/>나에게 맞는 커리큘럼을 추천받아요</div>
+      <p class="feat-desc">온보딩에서 관심 분야와 경제 지식 수준을 체크해요. 진단 결과를 바탕으로 맞춤형 학습 커리큘럼을 제공해 처음부터 끝까지 체계적으로 배울 수 있어요.</p>
+      <div class="feat-tags">
+        <span class="feat-tag yellow">맞춤 커리큘럼</span>
+        <span class="feat-tag">수준 진단</span>
+        <span class="feat-tag">관심 분야 설정</span>
+      </div>
+    </div>
+    <div class="feat-phone">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="ps-header"><span class="ps-app-name">이콘핏</span><div class="ps-icons"><div class="ps-icon"></div><div class="ps-icon"></div></div></div>
+          <div class="ps-section-title">관심 분야를 선택해주세요.</div>
+          <div class="onboarding-grid">
+            <div class="ob-item active">📈<div>거시경제</div></div>
+            <div class="ob-item">💹<div>금융</div></div>
+            <div class="ob-item yellow">🏠<div>부동산</div></div>
+            <div class="ob-item">💳<div>소비</div></div>
+            <div class="ob-item active">🌍<div>세계경제</div></div>
+            <div class="ob-item teal">📊<div>투자</div></div>
+          </div>
+          <div class="ps-cta-btn">선택 완료</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature 2: Learning -->
+  <div class="feature-block reverse">
+    <div class="feat-text">
+      <div class="feat-label">LEARNING</div>
+      <div class="feat-title">오늘의 경제 개념,<br/>단계별로 쉽게 학습해요</div>
+      <p class="feat-desc">매일 새로운 경제 개념 카드가 제공돼요. 텍스트, 인포그래픽, 예시로 쉽게 설명하고 학습 후 즉시 퀴즈로 확인해요. 진도율과 연속 학습 스트릭으로 동기를 유지할 수 있어요.</p>
+      <div class="feat-tags">
+        <span class="feat-tag">오늘의 학습</span>
+        <span class="feat-tag yellow">개념 카드</span>
+        <span class="feat-tag teal">진도율 관리</span>
+        <span class="feat-tag">연속 학습 스트릭</span>
+      </div>
+    </div>
+    <div class="feat-phone">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="ps-header"><span class="ps-app-name">이콘핏</span><div class="ps-icons"><div class="ps-icon"></div><div class="ps-icon"></div></div></div>
+          <div class="ps-big-card">
+            <div style="font-size:10px; color:rgba(255,255,255,.6); margin-bottom:4px;">오늘의 학습</div>
+            <div style="font-size:13px; font-weight:700; margin-bottom:8px;">금리와 경제의 관계</div>
+            <div style="height:40px; background:rgba(255,255,255,.1); border-radius:8px;"></div>
+          </div>
+          <div class="ps-section-title">학습 현황</div>
+          <div class="ps-list-item"><div class="ps-list-icon">📈</div><div class="ps-list-info" style="flex:1;"><div class="ps-list-title">거시경제 기초</div><div class="ps-progress-bar"><div class="ps-progress-fill" style="width:75%;"></div></div></div><div class="ps-pct">75%</div></div>
+          <div class="ps-list-item"><div class="ps-list-icon">💰</div><div class="ps-list-info" style="flex:1;"><div class="ps-list-title">금융 이해하기</div><div class="ps-progress-bar"><div class="ps-progress-fill" style="width:40%;"></div></div></div><div class="ps-pct">40%</div></div>
+          <div class="ps-list-item"><div class="ps-list-icon">💹</div><div class="ps-list-info" style="flex:1;"><div class="ps-list-title">투자 기초</div><div class="ps-progress-bar"><div class="ps-progress-fill" style="width:20%;"></div></div></div><div class="ps-pct">20%</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature 3: Quiz -->
+  <div class="feature-block">
+    <div class="feat-text">
+      <div class="feat-label">QUIZ &amp; GAMIFICATION</div>
+      <div class="feat-title">퀴즈를 풀며 학습하고<br/>리워드로 동기를 이어가요</div>
+      <p class="feat-desc">학습한 개념을 OX퀴즈, 빈칸 채우기, 객관식으로 확인해요. 연속 정답 시 콤보 보너스, 학습 달성 시 뱃지와 포인트가 지급돼요. 게이미피케이션으로 공부가 게임처럼 즐거워져요.</p>
+      <div class="feat-tags">
+        <span class="feat-tag yellow">OX 퀴즈</span>
+        <span class="feat-tag">빈칸 채우기</span>
+        <span class="feat-tag teal">콤보 보너스</span>
+        <span class="feat-tag">뱃지 시스템</span>
+      </div>
+    </div>
+    <div class="feat-phone">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="ps-header"><span class="ps-app-name">이콘핏</span><div class="ps-icons"><div class="ps-icon"></div></div></div>
+          <div style="font-size:12px; font-weight:700; color:var(--navy); text-align:center; margin:6px 0;">금리 관련 퀴즈</div>
+          <div class="quiz-q">기준금리가 오르면 시중 은행의 대출 금리도 함께 오르게 된다.</div>
+          <div class="quiz-opts">
+            <div class="quiz-opt correct">O</div>
+            <div class="quiz-opt">X</div>
+          </div>
+          <div class="quiz-explain">✅ 정답! 기준금리 인상 → 시중금리 상승 → 대출 비용 증가</div>
+          <div class="quiz-combo"><span class="combo-badge">🔥 3 콤보!</span><span class="pts-badge">+10 pts</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature 4: Finance Connect -->
+  <div class="feature-block reverse">
+    <div class="feat-text">
+      <div class="feat-label">FINANCE CONNECT</div>
+      <div class="feat-title">배운 개념이 실제 금융에서<br/>어떻게 나타나는지 확인해요</div>
+      <p class="feat-desc">학습한 경제 개념과 관련된 실시간 금융 지표(환율, 금리, 주가지수)와 뉴스를 바로 연결해서 볼 수 있어요. 이론과 실전을 동시에 익힐 수 있어요.</p>
+      <div class="feat-tags">
+        <span class="feat-tag">실시간 지표</span>
+        <span class="feat-tag yellow">뉴스 연계</span>
+        <span class="feat-tag teal">개념 태그</span>
+        <span class="feat-tag">관련 학습 바로가기</span>
+      </div>
+    </div>
+    <div class="feat-phone">
+      <div class="phone-frame">
+        <div class="phone-screen">
+          <div class="ps-header"><span class="ps-app-name">이콘핏</span><div class="ps-icons"><div class="ps-icon"></div><div class="ps-icon"></div></div></div>
+          <div class="ps-section-title">오늘의 금융 지표</div>
+          <div class="finance-grid">
+            <div class="finance-card"><div class="fc-label">기준금리</div><div class="fc-val up">3.50% ↑</div></div>
+            <div class="finance-card"><div class="fc-label">원/달러</div><div class="fc-val down">1,320 ↓</div></div>
+            <div class="finance-card"><div class="fc-label">코스피</div><div class="fc-val up">2,580 ↑</div></div>
+            <div class="finance-card"><div class="fc-label">CPI</div><div class="fc-val">2.8%</div></div>
+          </div>
+          <div class="ps-section-title" style="margin-top:6px;">연관 학습</div>
+          <div class="ps-list-item"><div class="ps-list-icon">📚</div><div class="ps-list-info"><div class="ps-list-title">금리가 환율에 미치는 영향</div><div class="ps-list-sub">관련 개념 학습하기 →</div></div></div>
+          <div class="ps-list-item"><div class="ps-list-icon">📰</div><div class="ps-list-info"><div class="ps-list-title">오늘의 경제 뉴스</div><div class="ps-list-sub">금리 인상 배경 분석 →</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 13. USABILITY TEST ══ -->
+<section class="usability" id="usability">
+  <div class="label">USABILITY TEST</div>
+  <h2>사용성을 위해 UT를 진행하고<br/>UI/UX를 개선했어요</h2>
+  <p class="sub-desc">이콘핏의 사용성을 개선하기 위해 타겟 유저층 5명을 대상으로 UT를 진행하고 참여자들이 공통으로 추장한 페인포인트를 적용해 UI/UX를 개선했습니다.</p>
+
+  <div class="ut-grid">
+    <div class="ut-card">
+      <div class="ut-badge">TEST 1 : 커리큘럼을 찾고, 학습을 1단계 진행해보세요.</div>
+      <div class="before-after">
+        <div class="ba-col before">
+          <div class="ba-label">Before</div>
+          <div class="ba-screen">
+            <div class="ba-row"></div><div class="ba-row"></div><div class="ba-row"></div><div class="ba-row"></div><div class="ba-row" style="width:70%;"></div>
+          </div>
+          <div class="ba-caption">복잡하고 직관적이지 않은 메뉴 구조</div>
+        </div>
+        <div class="ba-col after">
+          <div class="ba-label">After</div>
+          <div class="ba-screen">
+            <div class="ba-row hl"></div><div class="ba-row yl"></div><div class="ba-row hl"></div><div class="ba-row"></div><div class="ba-row yl" style="width:50%;"></div>
+          </div>
+          <div class="ba-caption">직관적이고 명확한<br/>학습 진입 구조</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ut-card">
+      <div class="ut-badge">TEST 2 : 퀴즈를 풀고, 오답을 복습해보세요.</div>
+      <div class="before-after">
+        <div class="ba-col before">
+          <div class="ba-label">Before</div>
+          <div class="ba-screen">
+            <div class="ba-row"></div><div class="ba-row" style="width:90%;"></div><div class="ba-row" style="width:60%;"></div><div class="ba-row"></div><div class="ba-row" style="width:40%;"></div>
+          </div>
+          <div class="ba-caption">단순 정오 표시만 있는 퀴즈 결과</div>
+        </div>
+        <div class="ba-col after">
+          <div class="ba-label">After</div>
+          <div class="ba-screen">
+            <div class="ba-row yl"></div><div class="ba-row hl"></div><div class="ba-row yl" style="width:75%;"></div><div class="ba-row hl" style="width:90%;"></div><div class="ba-row" style="width:55%;"></div>
+          </div>
+          <div class="ba-caption">해설과 관련 개념 연결이 있는<br/>부드러운 복습 UX</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 14. CLOSING ══ -->
+<section class="closing" id="closing">
+  <div class="label" style="color:var(--yellow); position:relative; z-index:1;">CLOSING</div>
+  <h2>경제를 <span>핏</span>하게,<br/>이콘핏이에요</h2>
+  <p>바쁜 일상 속에서도 경제를 쉽게 배우고, 금융과 연결해 실생활에 적용할 수 있도록 도와드릴게요.</p>
+  <div class="closing-badges">
+    <span class="closing-badge">경제 학습</span>
+    <span class="closing-badge hl">이콘핏</span>
+    <span class="closing-badge">금융 연계</span>
+    <span class="closing-badge">게이미피케이션</span>
+    <span class="closing-badge">맞춤 커리큘럼</span>
+  </div>
+</section>
+
+<!-- Side nav -->
+<nav class="side-nav">
+  <div class="nav-dot" onclick="scroll('hero')" title="Hero"></div>
+  <div class="nav-dot" onclick="scroll('overview')" title="Overview"></div>
+  <div class="nav-dot" onclick="scroll('research')" title="Research"></div>
+  <div class="nav-dot" onclick="scroll('goal')" title="Goal"></div>
+  <div class="nav-dot" onclick="scroll('competitive')" title="Competitive"></div>
+  <div class="nav-dot" onclick="scroll('persona')" title="Persona"></div>
+  <div class="nav-dot" onclick="scroll('blueprint')" title="Blueprint"></div>
+  <div class="nav-dot" onclick="scroll('flowchart')" title="Flowchart"></div>
+  <div class="nav-dot" onclick="scroll('visual')" title="Visual"></div>
+  <div class="nav-dot" onclick="scroll('color')" title="Color"></div>
+  <div class="nav-dot" onclick="scroll('typo')" title="Typography"></div>
+  <div class="nav-dot" onclick="scroll('features')" title="Features"></div>
+  <div class="nav-dot" onclick="scroll('usability')" title="Usability"></div>
+  <div class="nav-dot" onclick="scroll('closing')" title="Closing"></div>
+</nav>
+
+<script>
+function scroll(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
