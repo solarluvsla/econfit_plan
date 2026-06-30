@@ -890,11 +890,109 @@ p  { font-size: 14px; line-height: 1.85; color: var(--gray700); }
   border-radius: 50%;
   background: rgba(27,37,89,.2);
   cursor: pointer;
-  transition: all .2s;
+  transition: all .25s ease;
 }
 .nav-dot:hover {
   background: var(--navy);
-  transform: scale(1.5);
+  transform: scale(1.6);
+}
+.nav-dot.active {
+  background: var(--navy);
+  transform: scale(1.8);
+  box-shadow: 0 0 0 3px rgba(27,37,89,.15);
+}
+
+/* ══════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════ */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal-anim { opacity: 0; }
+.reveal-anim.revealed {
+  animation: revealUp 0.58s cubic-bezier(.22,.61,.36,1) forwards;
+}
+
+/* ══════════════════════════════
+   HOVER INTERACTIONS
+══════════════════════════════ */
+.research-card,
+.goal-card,
+.ut-card,
+.typo-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  cursor: default;
+}
+.research-card:hover,
+.goal-card:hover,
+.ut-card:hover,
+.typo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 36px rgba(27,37,89,.1);
+}
+
+.phone-mock:not(.active) {
+  transition: transform .25s ease, border-color .25s ease, background .25s ease;
+  cursor: pointer;
+}
+.phone-mock:not(.active):hover {
+  transform: translateY(-10px);
+  border-color: rgba(255,255,255,.25);
+  background: rgba(255,255,255,.08);
+}
+
+.feat-tag {
+  transition: transform 0.18s ease;
+  cursor: default;
+}
+.feat-tag:hover { transform: translateY(-2px); }
+
+.closing-badge {
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: default;
+}
+.closing-badge:not(.hl):hover {
+  background: rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.28);
+  color: rgba(255,255,255,.9);
+}
+
+.ob-item {
+  transition: transform 0.15s ease, background 0.15s ease;
+  cursor: pointer;
+}
+.ob-item:not(.active):not(.yellow):not(.teal):hover {
+  transform: scale(1.06);
+  background: var(--gray300);
+}
+
+.comp-feat-row {
+  border-radius: 10px;
+  margin: 0 -8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: background 0.2s ease;
+}
+.comp-feat-row:hover { background: var(--gray50); }
+
+/* Hero badge pulse */
+.hero-badge .dot {
+  animation: dotPulse 2.4s ease-in-out infinite;
+}
+@keyframes dotPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,213,79,.5); }
+  60%       { box-shadow: 0 0 0 7px rgba(255,213,79,0); }
+}
+
+/* Scroll indicator bounce */
+.hero-bottom div:last-child {
+  animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
 }
 
 /* ══════════════════════════════
